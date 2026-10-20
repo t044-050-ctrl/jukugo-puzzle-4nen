@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>熟語パズル４年</title>
  <meta property="og:title" content="熟語パズル４年">
-    <meta property="og:description" content="漢字カードを組み合わせて、意味に合う熟語を作るゲームです。">
+    <meta property="og:description" content="漢字カードを組み合わせて、意味に合う熟語を作るゲーム４年版です。">
     <meta property="og:type" content="website">
 <style>
   * { 
@@ -771,7 +771,7 @@ const IDIOM_2CHAR_DATABASE = [
   { word: "地面", reading: "じめん", meaning: "つちや石などでできた陸地の表面" },
   { word: "緑色", reading: "みどりいろ", meaning: "草や葉っぱのような緑の色" },
   { word: "感心", reading: "かんしん", meaning: "心からすばらしいと感どうすること" },
-  { word: "人物", reading: "じんぶつ", meaning: "人。またはすぐれた才能をもつ人" },
+  { word: "人物", reading: "じんぶつ", meaning: "ひと" },
   { word: "様子", reading: "ようす", meaning: "物事や人のありさまや姿" },
   { word: "仕方", reading: "しかた", meaning: "やり方や行い方" },
   { word: "早朝", reading: "そうちょう", meaning: "朝早くの早い時間" },
@@ -784,7 +784,7 @@ const IDIOM_2CHAR_DATABASE = [
   { word: "百科", reading: "ひゃっか", meaning: "いろいろな種類の学もんや知識" },
   { word: "言葉", reading: "ことば", meaning: "話したり書いたりするときにつかう言ぐさ" },
   { word: "花見", reading: "はなみ", meaning: "春に桜などの花を見てたのしむこと" },
-  { word: "行事", reading: "ぎょうじ", meaning: "学校や地域などで決まった日に行う催し" },
+  { word: "行事", reading: "ぎょうじ", meaning: "学校や地域などで決まった日に行うもよおし" },
   { word: "野川", reading: "のがわ", meaning: "野原を流れる川" },
   { word: "漢字", reading: "かんじ", meaning: "大むかしに中国からつたわった文字" },
   { word: "仕事", reading: "しごと", meaning: "何かを作る作業や自分のつとめ" },
@@ -893,15 +893,11 @@ const IDIOM_2CHAR_DATABASE = [
   { word: "電気", reading: "でんき", meaning: "明かりをつけたり機械を動かすエネルギー" },
   { word: "体育", reading: "たいいく", meaning: "体を動かして運動する授業" },
   { word: "図工", reading: "ずこう", meaning: "絵や工作の授業" },
-  { word: "早起き", reading: "はやおき", meaning: "朝早くおきること" },
   { word: "王様", reading: "おうさま", meaning: "国をおさめる一番えらい人" },
   { word: "切手", reading: "きって", meaning: "手紙を出すときにはる小紙" },
   { word: "一番", reading: "いちばん", meaning: "順序や段階が最も上であること" },
   { word: "黒板", reading: "こくばん", meaning: "教室の前にあるチョークで書く板" },
   { word: "小麦", reading: "こむぎ", meaning: "パンやうどんの材料になる穀物" },
-  { word: "春休み", reading: "はるやすみ", meaning: "進級する前にある春の休み" },
-  { word: "夏休み", reading: "なつやすみ", meaning: "夏の間にある長い休み" },
-  { word: "冬休み", reading: "ふゆやすみ", meaning: "年末年始の時期にある休み" },
   { word: "元気", reading: "げんき", meaning: "体が丈夫で、気力があふれていること" },
   { word: "学校", reading: "がっこう", meaning: "先生や友達と勉強する場所" },
   { word: "水中", reading: "すいちゅう", meaning: "水の中" },
@@ -1011,7 +1007,7 @@ const IDIOM_2CHAR_DATABASE = [
   { word: "伝統", reading: "でんとう", meaning: "昔から代々受け継がれてきたこと" },
   { word: "特色", reading: "とくしょく", meaning: "他とちがう目立つところ" },
   { word: "産業", reading: "さんぎょう", meaning: "農業や工業など社会の仕事" },
-  { word: "生産", reading: "せいさん", meaning: "モノを作り出すこと" },
+  { word: "生産", reading: "せいさん", meaning: "ものを作り出すこと" },
   { word: "消費", reading: "しょうひ", meaning: "使ったり食べたりして消費すること" },
   { word: "警察", reading: "けいさつ", meaning: "町の安全を守り事件を防ぐ仕事" },
   { word: "消防", reading: "しょうぼう", meaning: "火事を消したり人を助けたりすること" },
@@ -1043,12 +1039,8 @@ const IDIOM_2CHAR_DATABASE = [
   { word: "開発", reading: "かいはつ", meaning: "山や土地を開いて新しく使うこと" },
   { word: "保護", reading: "ほご", meaning: "かばって大切に守ること" },
   { word: "環境", reading: "かんきょう", meaning: "まわりの自然や生活の様子" },
-  { word: "ごみ", reading: "ごみ", meaning: "いらなくなって捨てるもの" },
   { word: "分別", reading: "ぶんべつ", meaning: "種類ごとに分けること" },
   { word: "資源", reading: "しげん", meaning: "役立つ材料やエネルギーのもと" },
-  { word: "水利", reading: "すいり", meaning: "水を利用して便利にすること" },
-  { word: "ダム", reading: "だむ", meaning: "川の水をためる大きな壁" },
-  { word: "ガス", reading: "がす", meaning: "燃やして熱を出す気体" },
   { word: "通信", reading: "つうしん", meaning: "知らせや思いを遠くへ送ること" },
   { word: "情報", reading: "じょうほう", meaning: "事柄や出来事についての知らせ" },
   { word: "放送", reading: "ほうそう", meaning: "ラジオやテレビで声や映像を送ること" },
@@ -1056,7 +1048,7 @@ const IDIOM_2CHAR_DATABASE = [
   { word: "記録", reading: "きろく", meaning: "書きしるして残すこと" },
   { word: "観察", reading: "かんさつ", meaning: "じっくり見て変化を調べること" },
   { word: "予想", reading: "よそう", meaning: "前もって考えること" },
-  { word: "結果", reading: "けっか", meaning: "行ったあとにでてきた事柄" },
+  { word: "結果", reading: "けっか", meaning: "あることがもとになって おこったこと" },
   { word: "原因", reading: "げんいん", meaning: "ことが起こったもと" },
   { word: "変化", reading: "へんか", meaning: "前と形や様子が変わること" },
   { word: "共通", reading: "きょうつう", meaning: "二つ以上のものに同じ部分があること" },
@@ -1076,18 +1068,17 @@ const IDIOM_2CHAR_DATABASE = [
   { word: "気温", reading: "きおん", meaning: "空気のあたたかさやつめたさ" },
   { word: "割合", reading: "わりあい", meaning: "全体に対する大きさの比" },
   { word: "平均", reading: "へいきん", meaning: "平らにならした値" },
-  { word: "少数", reading: "しょうすう", meaning: "1より小さい数を表す記号付きの数" },
+  { word: "小数", reading: "しょうすう", meaning: "1より小さい数を表す数" },
   { word: "分数", reading: "ぶんすう", meaning: "全体をいくつかに分けた数" },
   { word: "図形", reading: "ずけい", meaning: "線や面でできた形" },
   { word: "平行", reading: "へいこう", meaning: "二つの線がどこまでいっても交わらないこと" },
-  { word: "垂直", reading: "すいちょく", meaning: "まっすぐ九十度に交わること" },
+  { word: "垂直", reading: "すいちょく", meaning: "まっすぐ９０度に交わること" },
   { word: "角度", reading: "かくど", meaning: "角の開き具合の大きさ" },
-  { word: "単位", reading: "たんい", meaning: "長さをはかる基準" },
+  { word: "単位", reading: "たんい", meaning: "長さなどをはかる基準" },
   { word: "体積", reading: "たいせき", meaning: "立体の大きさ" },
-  { word: "重さ", reading: "おもさ", meaning: "目方や手ごたえ" },
-  { word: "時刻", reading: "じこく", meaning: "時の点の位置" },
+  { word: "重さ", reading: "おもさ", meaning: "目方・手ごたえ" },
+  { word: "時刻", reading: "じこく", meaning: "時の流れの中のある決まった時" },
   { word: "規則", reading: "きそく", meaning: "決まりごと" },
-  { word: "比例", reading: "ひれい", meaning: "片方が二倍三倍になると他方も二倍三倍になること" },
   { word: "整理", reading: "せいり", meaning: "整えてまとめること" },
   { word: "点検", reading: "てんけん", meaning: "一つずつ調べ確かめること" },
   { word: "反省", reading: "はんせい", meaning: "自分の行いを振り返って考えること" },
@@ -1141,7 +1132,7 @@ const IDIOM_MULTICHAR_DATABASE = [
   { word: "運動会", reading: "うんどうかい", meaning: "走ったりおどったりする学校の行事" },
   { word: "青信号", reading: "あおしんごう", meaning: "すすんでもよいことを示す信号" },
   { word: "赤信号", reading: "あかしんごう", meaning: "止まらなければいけない信号" },
-  { word: "お正月", reading: "おしょうがつ", meaning: "1月1日を中心とする新しい年のお祝い" },
+  { word: "正月", reading: "しょうがつ", meaning: "1月1日を中心とする新しい年のお祝い" },
   { word: "春夏秋冬", reading: "しゅんかしゅうとう", meaning: "春・夏・秋・冬の四つの季節" },
   { word: "自動車", reading: "じどうしゃ", meaning: "エンジンやモーターで動く車" },
   { word: "外国語", reading: "がいこくご", meaning: "外国でつかわれている言葉" },
@@ -1161,20 +1152,15 @@ const IDIOM_MULTICHAR_DATABASE = [
   { word: "魚市場", reading: "うおいちば", meaning: "魚を売ったり買ったりする場所" },
   { word: "水平線", reading: "すいへいせん", meaning: "海と空が交わって平らに見える線" },
   { word: "漢字辞典", reading: "かんじじてん", meaning: "漢字の意味や読み方を集めた本" },
-  { word: "米作り", reading: "こめづくり", meaning: "お米を育てること" },
   { word: "用水路", reading: "ようすいろ", meaning: "畑や田んぼに水をひくみぞ" },
-  { word: "理由づけ", reading: "りゆうづけ", meaning: "わけを明らかにすること" },
   { word: "登場人物", reading: "とうじょうじんぶつ", meaning: "お話に出てくる人や生き物" },
   { word: "気持ち", reading: "きもち", meaning: "心で感じていること" },
   { word: "類義語", reading: "るいぎご", meaning: "意味が似ている言葉" },
   { word: "対義語", reading: "たいぎご", meaning: "反対の意味を持つ言葉" },
   { word: "慣用句", reading: "かんようく", meaning: "二つ以上の言葉が決まった意味を作る組" },
-  { word: "ことわざ", reading: "ことわざ", meaning: "昔からの教えを表した言葉" },
   { word: "四字熟語", reading: "よじじゅくご", meaning: "四つの漢字でできた言葉" },
-  { word: "都道府県名", reading: "とどうふけんめい", meaning: "各都道府県のなまえ" },
   { word: "県庁所在地", reading: "けんちょうしょざいち", meaning: "県庁のある役所の場所" },
   { word: "降水量", reading: "こうすいりょう", meaning: "降った雨や雪の量" },
-  { word: "グラフ", reading: "ぐらふ", meaning: "数字をわかりやすく線や図にしたもの" },
   { word: "四角形", reading: "しかくけい", meaning: "四つの角と直線で囲まれた形" },
   { word: "立方体", reading: "りっぽうたい", meaning: "正方形六つで囲まれた立体" },
   { word: "直方体", reading: "ちょくほうたい", meaning: "長方形六つで囲まれた立体" },
@@ -1192,20 +1178,40 @@ const SPECIAL_STAGE_THEMES = [
     targets: ["鮭", "鮪", "鯖", "鯛", "鮎", "鰹", "鯉", "鮫", "鰻", "鰺", "鰯", "鰈", "鱈", "鯨", "鰆", "蛸", "烏", "蟹", "蝦", "鮑"]
   },
   {
-    name: "植物・木・花",
-    targets: ["桜", "松", "竹", "梅", "杉", "菊", "藤", "柳", "楓", "柿", "桃", "栗", "桐", "葵", "椿", "蘭", "百", "草", "葉", "芽"]
+    name: "植物",
+    targets: ["桜", "松", "竹", "梅", "杉", "菊", "藤", "柳", "楓", "柿", "桃", "栗", "桐", "葵", "椿", "蘭", "梨", "草", "葉", "芽"]
   },
   {
     name: "色",
-    targets: ["赤", "青", "黄", "緑", "白", "黒", "紫", "桃", "橙", "紺", "茶", "銀", "金", "灰", "朱", "紅", "碧", "翠", "墨", "茜"]
+    targets: ["赤", "青", "黄", "緑", "白", "黒", "紫", "桃", "橙", "紺", "茶", "銀", "金", "灰", "朱", "紅", "碧", "翠", "藍", "茜"]
   },
   {
-    name: "身体・人体",
+    name: "体",
     targets: ["手", "足", "目", "耳", "口", "頭", "心", "骨", "血", "首", "指", "胸", "腹", "背", "歯", "肩", "腕", "顔", "脳", "肌"]
   },
   {
-    name: "自然・天気",
-    targets: ["雨", "雪", "風", "雲", "雷", "海", "山", "川", "空", "星", "月", "日", "谷", "陸", "波", "虹", "霧", "霜", "嵐", "潮"]
+    name: "天気",
+    targets: ["雨", "雪", "雲", "霧", "雷", "風", "虹", "霞", "霜", "露", "嵐", "凪", "晴", "曇", "氷", "雹", "陽", "霙", "霰", "暖"]
+　},
+  {
+    name: "数",
+    targets: ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "百", "千", "万", "億", "兆", "零", "壱", "弐", "参", "廿"]
+　},
+  {
+    name: "国",
+    targets: ["日", "米", "仏", "独", "伊", "露", "中", "韓", "印", "越", "泰", "比", "豪", "加", "墨", "伯", "西", "蘭", "埃", "瑞"]
+　},
+  {
+    name: "鳥",
+    targets: ["鶏", "鳩", "鴨", "鶴", "鷲", "鷹", "鷺", "雀", "烏", "燕", "雉", "鵜", "鷗", "梟", "鳶", "鴉", "鴫", "鵠", "雁", "鶉"]
+  },
+  {　
+    name: "虫",
+    targets: ["蟻", "蜂", "蝶", "蛾", "蚊", "蝉", "蛍", "蠅", "虻", "蚕", "蚤", "虱", "蛭", "蜻", "螻", "蜩", "蟋", "蛆", "蛹", "螽"]
+　},
+  {
+    name: "地形",
+    targets: ["山", "川", "谷", "丘", "島", "浜", "岸", "崖", "峰", "峠", "沼", "沢", "池", "湖", "滝", "森", "岬", "林", "湾", "瀬"]
   }
 ];
 
