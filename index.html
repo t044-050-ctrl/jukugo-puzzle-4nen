@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>熟語パズル４年</title>
+ <meta property="og:title" content="熟語パズル４年">
+    <meta property="og:description" content="漢字カードを組み合わせて、意味に合う熟語を作るゲームです。">
+    <meta property="og:type" content="website">
 <style>
   * { 
     box-sizing: border-box; 
@@ -1207,8 +1210,8 @@ const SPECIAL_STAGE_THEMES = [
 ];
 
 const DUMMY_KANJI_POOL = [
-  "語", "数", "代", "利", "車", "本", "学", "話", "時", "生", "食", "力", "立", "走", "高", "大", "小", "新", "古", "名",
-  "間", "国", "社", "校", "門", "天", "地", "方", "道", "線", "点", "面", "体", "文", "字", "音", "画", "野", "原", "市",
+  "語", "別", "代", "利", "車", "本", "学", "話", "時", "生", "食", "力", "立", "走", "高", "大", "小", "新", "古", "名",
+  "間", "班", "社", "校", "門", "愛", "地", "方", "道", "線", "点", "面", "体", "文", "字", "音", "画", "野", "原", "市",
   "町", "村", "家", "室", "店", "場", "工", "業", "政", "法", "理", "科", "算", "図", "画", "歌", "踊", "走", "跳", "投"
 ];
 
@@ -2188,11 +2191,11 @@ function showStartModal() {
             fill="url(#puzzleGrad)" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" filter="url(#puzzleGlow)"/>
         </svg>
       </div>
-      <div class="start-hero-badge">小学３年生のかんじパズル</div>
-      <h1 class="start-hero-title">熟語パズル３年</h1>
+      <div class="start-hero-badge">小学４年生の漢字パズル</div>
+      <h1 class="start-hero-title">熟語パズル４年</h1>
       <p class="start-hero-desc">
-        漢字カードをスワイプ！<br>
-        いみに合う熟語をすばやく完成させて<br>
+        漢字カードをスワイプ＆タップ！<br>
+        意味に合う熟語をすばやく完成させて<br>
         50マスのゴールをめざそう！
       </p>
       <button class="start-play-btn" onclick="startGameFromModal(this)">GAME START</button>
